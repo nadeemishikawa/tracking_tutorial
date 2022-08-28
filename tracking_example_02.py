@@ -40,7 +40,7 @@ while True:
         landmarks = landmark_predictor(gray, face)
         # landmarks_numがshape_predictor_68_face_landmarks.datと対応（添付画像）
 
-        for landmarks_num in range(48, 67):
+        for landmarks_num in range(48, 68):
             x = landmarks.part(landmarks_num).x
             y = landmarks.part(landmarks_num).y
             cv2.circle(frame, (x, y), 3, (0, 255, 0))
